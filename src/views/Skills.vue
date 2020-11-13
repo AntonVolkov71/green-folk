@@ -1,6 +1,6 @@
 <template>
-  <div class="about" id="about">
-    <h1>About</h1>
+  <div class="about" id="skills">
+    <h1>Skills</h1>
 
   </div>
 </template>
@@ -13,7 +13,7 @@
 
     height: 100vh;
 
-    background-color: forestgreen;
+    background-color: aliceblue;
 
   }
 </style>

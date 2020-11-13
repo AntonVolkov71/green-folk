@@ -1,9 +1,9 @@
 <template>
-  <div class="about" id="about">
-    <h1>About</h1>
-
+  <div class="about" id="works">
+    <h1>Works</h1>
   </div>
 </template>
+
 
 <style scoped>
   .about {
@@ -13,7 +13,8 @@
 
     height: 100vh;
 
-    background-color: forestgreen;
+    background-color: ivory;
+
 
   }
 </style>
