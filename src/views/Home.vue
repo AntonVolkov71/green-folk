@@ -1,7 +1,11 @@
 <template>
-  <div class="home" id="home">
-    <h1>Volkov</h1>
-    <button @click="handlerBtnNext">DOWN</button>
+  <div class="home scrollspy" id="home">
+    <div class="home__content container">
+      <h1 class="home__title ">{{"I'm Anton Volkov" | localize}}</h1>
+    <p class="home__description container"> Accusamus, alias at cum dicta dignissimos dolore dolorem earum error exercitationem facilis fugiat inventore maxime molestiae provident qui quisquam ratione reprehenderit sed veritatis vitae. Blanditiis eaque iure sed vel?</p>
+    </div>
+    <a class=" btn-floating btn-large pulse home__link-down" @click.prevent="handlerBtnNext"><i class="material-icons">expand_more</i></a>
+<!--  <button @click="handlerBtnNext"><i class="material-icons">add</i></button>-->
   </div>
 </template>
 
@@ -13,11 +17,6 @@
     methods: {
       handlerBtnNext() {
         scroll("#about")
-        // прокрутка плавная
-        // document.querySelector("#about").scrollIntoView({
-        //   behavior: 'smooth',
-        //   block: 'start'
-        // })
       }
     }
 
@@ -25,20 +24,6 @@
 </script>
 <style scoped>
   .home {
-    /*border: 1px solid red;*/
-    border-bottom: 1px solid transparent;
-
-    padding-top: 70px;
-    margin: 0;
-
-    height: 100vh;
-
-    background-color: antiquewhite;
-
-  h1 {
-    margin: 0;
-
-  }
-
+    background: url("../assets/images/back-app.jpg") no-repeat center center;
   }
 </style>

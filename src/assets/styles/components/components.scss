@@ -1,0 +1,27 @@
+@import 'header';
+@import 'home';
+@import 'about';
+@import 'skills';
+@import 'works';
+@import 'contacts';
+@import 'footer';
+
+$padT: 70px;
+$mar: 0;
+
+$heightViews: 100vh;
+$bg: red;
+
+%marPadHeight {
+  padding-top: $padT;
+  margin: $mar;
+
+  height: $heightViews;
+}
+
+
+
+
+
+
+

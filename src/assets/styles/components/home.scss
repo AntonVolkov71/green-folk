@@ -1,0 +1,64 @@
+.home {
+  @extend %marPadHeight;
+
+  border-bottom: 1px solid transparent;
+
+  background-size: cover;
+
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+  border: 1px solid yellow;
+
+  }
+  &__title {
+    text-align: center;
+
+    margin: 0 0 5px;
+
+    font-size: 6rem;
+    font-weight: bold;
+
+
+  }
+  &__description {
+    font-size: 2rem;
+    //color: #A8A8A8;
+
+    text-align: center;
+  }
+
+  &__link-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -29px;
+    background-color: rgba(32, 178, 170, .5);
+    display: block;
+    height: 42px;
+    width: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(213, 178, 32, .9);
+    }
+
+    & > i {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+     // background: transparent;
+    }
+  }
+}

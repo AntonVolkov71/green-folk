@@ -1,5 +1,5 @@
 <template>
-  <div class="about" id="about">
+  <div class="about scrollspy" id="about" data-views="about">
     <h1>About</h1>
 
   </div>

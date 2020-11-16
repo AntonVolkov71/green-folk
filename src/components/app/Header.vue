@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar-fixed">
+  <div class="header navbar-fixed">
     <nav>
       <div class="nav-wrapper">
         <span>
@@ -8,10 +8,10 @@
         <span>
           <ul id="nav-mobile" class="hide-on-med-and-down">
          <li
-             v-for="link of linkRoutes"
+             v-for="link of links"
              :key="link.id"
              :class="{'active': link.active}"
-             @click="handlerLink(link.id, link.ref)"
+             @click="handlerLink( link.ref)"
          >
            <router-link
                :to="link.ref"
@@ -25,7 +25,8 @@
                 v-for="loc in linkLocales"
                 :key="loc.id"
                 :class="{'active': locale === loc.locale}"
-                @click.prevent="changeLocales(loc.locale)">
+                @click="handlerLocale(loc.locale)"
+            >
               <a>{{loc.title}}</a>
             </li>
         </ul>
@@ -37,22 +38,21 @@
 </template>
 
 <script>
-  import {mapGetters, mapMutations} from "vuex"
+  import {mapGetters, mapActions} from "vuex"
   import scroll from '@/utils/scroll'
 
   export default {
     name: "Header",
-    props: ['linkRoutes', 'linkLocales'],
+    props: ['linkLocales'],
     computed: {
-      ...mapGetters(['locale']),
+      ...mapGetters(['locale', 'links']),
     },
     methods: {
-      ...mapMutations(['toggleLocale']),
-      handlerLink(id, ref) {
+      ...mapActions(['toggleLocale']),
+      handlerLink(ref) {
         scroll(ref)
-        this.$emit("toRoute", id)
       },
-      changeLocales(key) {
+      handlerLocale(key) {
         this.toggleLocale(key)
         localStorage.setItem('locale', key)
       },
@@ -63,23 +63,7 @@
 </script>
 
 <style scoped>
-  .navbar-fixed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 
-  .nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-
-    height: 70px;
-
-    border: 1px solid transparent;
-
-  }
 
 </style>
 

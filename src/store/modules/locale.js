@@ -3,8 +3,13 @@ export default {
     locale: "ru-RU"
   },
   mutations: {
-    toggleLocale(state, key) {
+    setLocale(state, key) {
       return state.locale = key
+    }
+  },
+  actions:{
+    toggleLocale({commit}, key) {
+      commit('setLocale', key)
     }
   },
   getters: {
@@ -12,4 +17,5 @@ export default {
       return state.locale
     }
   },
+
 }

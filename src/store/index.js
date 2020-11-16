@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 
 
 import locale from './modules/locale'
+import links from './modules/links'
 
 Vue.use(Vuex)
 
@@ -12,6 +13,6 @@ export default new Vuex.Store({
   getters: {},
   actions: {},
   modules: {
-    locale
+    locale, links
   }
 })
