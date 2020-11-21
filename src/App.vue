@@ -25,5 +25,6 @@
 <style lang="scss">
   @import "~materialize-css/dist/css/materialize.min.css";
   @import "assets/styles/main";
-  @import 'assets/styles/normalize.css'
+  @import 'assets/styles/normalize.css';
 </style>
+

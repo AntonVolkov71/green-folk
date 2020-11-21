@@ -1,9 +1,17 @@
 {
   "Home": "Home",
-  "About": "About me",
+  "About": "About Me",
   "Skills": "Skills",
   "Works": "Works",
   "Contacts": "Contacts",
   "HomeComponent": "HomeComponent",
-  "I'm Anton Volkov": "I'm Anton Volkov"
+  "I'm Anton Volkov": "I'm Anton Volkov",
+  "textHomeDesc": "Accusamus, alias at cum dicta dignissimos dolore dolorem earum error exercitationem facilis fugiat inventore maxime molestiae provident qui quisquam ratione reprehenderit sed veritatis vitae. Blanditiis eaque iure sed vel?",
+  "Contact Details": "Contact Details",
+  "textAboutDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque cupiditate dolorem ea eaque, esse, ipsum libero minus molestiae officia repellendus sequi soluta tempora tenetur vel vitae voluptatem. Aliquam deleniti enim impedit! Amet animi aut cumque debitis deserunt fuga illo ipsam natus nesciunt, nobis porro quam qui tempora. Adipisci alias assumenda cumque debitis doloribus, dolorum fuga in itaque minima placeat quo quos reprehenderit sint, sit soluta, sunt voluptatum. Ad aliquam aut commodi culpa dignissimos doloremque enim eum fugiat fugit illo illum incidunt ipsam libero, magnam modi molestias omnis quam quas quasi rem, sequi sint voluptatum? Dolore eligendi maiores perspiciatis sit.",
+  "City": "City",
+  "Podolsk" : "Podolsk",
+  "Email": "Email",
+  "Phone": "Phone",
+  "Load resume": "Load resume"
 }

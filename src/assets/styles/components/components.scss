@@ -7,6 +7,7 @@
 @import 'footer';
 
 $padT: 70px;
+$padB: 60px;
 $mar: 0;
 
 $heightViews: 100vh;
@@ -14,6 +15,7 @@ $bg: red;
 
 %marPadHeight {
   padding-top: $padT;
+  padding-bottom: $padB;
   margin: $mar;
 
   height: $heightViews;

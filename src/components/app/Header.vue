@@ -3,10 +3,10 @@
     <nav>
       <div class="nav-wrapper">
         <span>
-          <a href="#" class="brand-logo">Logo</a>
+          <a href="#" class="brand-logo hide-on-med-only">Logo</a>
         </span>
         <span>
-          <ul id="nav-mobile" class="hide-on-med-and-down">
+          <ul id="nav-mobile" class=" hide-on-small-only show-on-medium-and-up">
          <li
              v-for="link of links"
              :key="link.id"

@@ -2,9 +2,10 @@
   <div class="home scrollspy" id="home">
     <div class="home__content container">
       <h1 class="home__title ">{{"I'm Anton Volkov" | localize}}</h1>
-    <p class="home__description container"> Accusamus, alias at cum dicta dignissimos dolore dolorem earum error exercitationem facilis fugiat inventore maxime molestiae provident qui quisquam ratione reprehenderit sed veritatis vitae. Blanditiis eaque iure sed vel?</p>
+    <p class="home__description container">{{"textHomeDesc" | localize}}</p>
     </div>
-    <a class=" btn-floating btn-large pulse home__link-down" @click.prevent="handlerBtnNext"><i class="material-icons">expand_more</i></a>
+<!--    <a class=" btn-floating btn-large pulse home__link-down" @click.prevent="handlerBtnNext"><i class="material-icons">expand_more</i></a>-->
+    <a class=" btn-floating btn-large pulse home__link-down" @click.prevent="handlerBtnNext">&or;</a>
 <!--  <button @click="handlerBtnNext"><i class="material-icons">add</i></button>-->
   </div>
 </template>

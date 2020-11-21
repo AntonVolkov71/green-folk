@@ -1,6 +1,91 @@
+%title {
+  font-size: 22px;
+  color: #fff;
+
+  margin: 0 0 12px;
+}
+
+%descText {
+  line-height: 20px;
+  color: #7A7A7A;
+
+  margin: 0;
+  padding: 0;
+}
+
+%titleDecs {
+  &_title {
+    @extend %title
+  }
+
+  &_text {
+    @extend %descText
+  }
+}
+
 .about {
   @extend %marPadHeight;
 
-  background-color: forestgreen;
+  background-color: #2b2b2b;
+
+
+  &__container {
+    max-height: 100%;
+    padding: 70px 70px 0;
+  }
+
+  .row &__sidebar {
+    text-align: center;
+  }
+
+  &__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+  }
+  &__content {
+    padding: 0;
+  }
+
+  &__about-me {
+    &_title {
+      @extend %title
+    }
+
+    &_text {
+      @extend %descText
+    }
+
+    margin:0 0 30px ;
+  }
+
+  &__info {
+  }
+
+  &__contacts {
+
+    &_title {
+      @extend %title
+    }
+
+    &_text {
+      @extend %descText
+    }
+
+  }
+
+  &__download{
+    background: #444;
+    padding: 0 10px;
+    min-width: 215px;
+    //min-width: min-content;
+    display: flex;
+    justify-content: space-around;
+    //.fa-download {
+    //  margin: auto 5px;
+    //}
+  }
+
+
 
 }
