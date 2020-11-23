@@ -19,8 +19,11 @@
           </div>
           <div class="about__resume col s5">
             <button class="btn about__download">
-              <i class="fa fa-download"></i>
-              {{"Load resume" | localize}}
+              <a href='@/assets/files/resume_Volkov.pdf' download>
+                <i class="fa fa-download"></i>
+                {{"Load resume" | localize}}
+              </a>
+
             </button>
           </div>
         </div>
